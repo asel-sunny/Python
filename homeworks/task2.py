@@ -4,3 +4,4 @@
 string = input("Please give a string :" )
 
 print(string[::-1])
+
