@@ -110,6 +110,14 @@ tupl = tuple(num for num in range(10) if num %2 == 0)
 print(tupl)
 
 
+# TUPLES
+
+a = ("some text")
+print(type(a))
+
+
+
+
 
     
     
