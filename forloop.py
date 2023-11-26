@@ -11,5 +11,5 @@ for i in range(int):
 n = 0
 while n < 10:
     n += 1
-    print(n)
+    #print(n)
     
