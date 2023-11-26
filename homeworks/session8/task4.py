@@ -1,3 +1,5 @@
+# Didnt get the calculate the average flight time part
+
 connections = [
     ('Amsterdam', 'Dublin', 100),
     ('Amsterdam', 'Rome', 140),
