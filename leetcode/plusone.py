@@ -1,6 +1,6 @@
 #This wont work with 9  
 
-digits = [3,4,5,6,6]
+digits = [9]
 
 # new = digits[-1] + 1
 
@@ -15,6 +15,8 @@ digits = [3,4,5,6,6]
 if len(digits) < 2 or digits == "9":
     digits[-1] = digits[-1] +1
     a = str(digits)
+    #b = []
+    #b.append(a)
     print(a)
     #print(list(digits))
 else:
