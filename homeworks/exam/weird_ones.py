@@ -13,3 +13,19 @@ def f():
     for i in t.values():
         print(i[0],end="")
 f()   # this function prints 0 index of each value in a dictionary
+
+# RECURSION ,  is a programming technique in which the function invokes itself 
+def foo():
+    bar()
+
+def bar():
+    foo()
+
+# RECURSION : One more example 
+
+def factorial(n):
+    if n < 2:
+        return n
+    else:
+        return n * factorial(n - 1)
+print(factorial(5))   # prints 120 ( 5 * 4 * 3 * 2 * 1 )
