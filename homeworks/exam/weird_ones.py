@@ -29,3 +29,36 @@ def factorial(n):
     else:
         return n * factorial(n - 1)
 print(factorial(5))   # prints 120 ( 5 * 4 * 3 * 2 * 1 )
+
+
+# Confusing list comprehensions
+
+fruits = ("apple", "banana", "cherry", "kiwi", "banana")
+newlist = [x if x != "banana" else "orange" for x in fruits]
+print(newlist)           # loops through each fruit and returns the item if it is not banana, if it is banana returns orange        
+                         # Output :  ['apple', 'orange', 'cherry', 'kiwi', 'orange']
+
+
+# Same DATA AGGREGATION when assigning list to list
+
+list1 = [1,2,3]
+list2 = list1 
+list2.append(4)
+print(list1)    # prints 1,2,3,4
+print(list2)    # prints 1,2,3,4
+
+# However , if you use  COPY function , it wont affect the other list
+list3 = list1.copy()
+list3.append(5)
+print(list3)    # prints 1,2,3,4,5
+print(list1)    # prints 1,2,3,4
+
+# Another way of COPYING the list , with the list() method
+list4 = list(list3)
+list4.append(6)
+print(list4)    # prints 1,2,3,4,5,6
+print(list3)    # prints 1,2,3,4,5
+
+
+
+

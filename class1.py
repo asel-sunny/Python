@@ -3,7 +3,7 @@ for i in "Hello":
     
     if i == "e":
         continue
-    print(i)
+    print(i, end = "")
 
 
 # Just passes and do nothing
